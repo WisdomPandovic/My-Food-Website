@@ -1,0 +1,107 @@
+* {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav {
+    background-color: #f8f9fa;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo{
+    font-family: cursive;
+}
+
+  nav .navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+
+  .search-container {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .search-container input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    width: 200px;
+  }
+
+  .search-container button {
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-left: 5px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .container {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+
+  .card-body {
+    padding: 20px;
+  }
+
+  .card-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .card-text {
+    color: #555;
+  }
+
+  #noInputMessage {
+    display: none;
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+
+  @media (max-width: 768px) {
+    nav {
+      display: block;
+    }
+
+    .search-container {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+
+    .search-container input[type=text] {
+      width: 100%;
+    }
+
+    .search-container button {
+      margin-top: 10px;
+    }
+
+    .container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }

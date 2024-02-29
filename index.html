@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Food Website</title>
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+
+<nav>
+  <a class="navbar-brand" href="#">
+    <img src="logo.png" alt="">
+    <p class="logo">My Food Website</p>
+  </a>
+  <div class="search-container">
+    <input id="searchInput" type="text" placeholder="Search">
+    <button onclick="search()">Search</button>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Meat</h5>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Rice</h5>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Drink</h5>
+    </div>
+  </div>
+  <div id="noInputMessage">No input available at the moment.</div>
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
